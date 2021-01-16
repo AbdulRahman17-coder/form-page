@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title id="title">Survey Form</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div id="heading">
+            <h1>FreeCodeCamp Survey Form</h1>
+            <p id="description">Thank you for taking the time to fill this form</p><br><br>
+        </div>
+        
+        <div style="width: 200px; margin: 0 auto;">
+            <form id="survey-form">
+                <label for="name" id="name">Name</label><br>
+                <input type="text" id="name" name="fname" placeholder="Enter your name" required><br><br>
+
+                <label for="email" id="email">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label for="age" id="number">Age(optional)</label><br>
+                <input type="number" id="age" name="age" placeholder="Age" required><br><br>
+
+                <label for="role" id="dropdown">Which option best describes your current role?</label><br>
+                    <select id="role" name="role" required placeholder="Select current role"><br>
+                        <option value="Select current role">Select current role</option>
+                        <option value="Student">Student</option>
+                        <option value="Full Time Job">Full Time Job</option>
+                        <option value="Full Time Learner">Full Time Learner</option>
+                        <option value="Perfer not to say">Perfer not to say</option>
+                        <option value="Other">Other</option>
+                    </select><br>
+
+                <div name="radio">
+                    <h4>Would you recommend this survey to a friend?</h4>
+                    <input type="radio" id="answer" name="text" value="definitely" required>
+                    <label for="definitely">Definitely</label><br>
+
+                    <input type="radio" id="answer" name="text" value="female">
+                    <label for="female">Maybe</label><br>
+
+                    <input type="radio" id="answer" name="text" value="not sure">
+                    <label for="not sure">Not sure</label><br><br>
+                </div>
+
+                <div>
+                    <h4>What is your favorite food?</h4>
+                    <input type="checkbox" id="answer" name="text" value="pizza"  required>
+                    <label for="pizza"></label>Pizza<br>
+
+                    <input type="checkbox" id="answer" name="text" value="Burger">
+                    <label for="Burger"></label>Burger<br>
+
+                    <input type="checkbox" id="answer" name="text" value="hot dog">
+                    <label for="hot dog"></label>Hot dogs<br><br>
+                </div>
+
+                <div>
+                    <h4>Any comments or suggestions?</h4>
+                    <textarea rows="4" cols="30" name="comment" form="usrform" placeholder="Enter youre comment here..."></textarea><br><br>
+                </div>
+
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+    </body>
+</html>
